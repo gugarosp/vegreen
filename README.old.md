@@ -1,2 +1,0 @@
-# Vegreen
-## Aplicação React

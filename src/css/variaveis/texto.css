@@ -1,0 +1,28 @@
+:root {
+    /* Familia Tipográfica */
+    --font-family-body: 'Nunito', sans-serif;
+    --font-family-title: 'Nunito', sans-serif;
+
+    /* Tamanho */
+    --font-size-extra-small: .75rem;
+    --font-size-small: .875rem;
+    --font-size-normal: 1rem;
+    --font-size-big: 1.25rem;
+    --font-size-extra-big: 1.5rem;
+    --font-size-giant: 2rem;
+
+    /* Peso */
+    --font-weight-regular: normal;
+    --font-weight-semibold: 600;
+    --font-weight-bold: bold;
+    --font-weight-extra-bold: 900;
+
+    /* Entrelinha */
+    --line-height-micro: .75rem;
+    --line-height-extra-tiny: .875rem;
+    --line-height-tiny: 1rem;
+    --line-height-little: 1.125rem;
+    --line-height-medium: 1.25rem;
+    --line-height-large: 1.5rem;
+    --line-height-extra-large: 2rem;
+}

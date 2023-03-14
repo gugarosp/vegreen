@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import Botao from './elementos/Botao/Botao';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Botao cor="primario" tipo="padrao" tamanho="grande" />
+      <Botao cor="primario" tipo="padrao" tamanho="pequeno" />
+      <Botao cor="secundario" tipo="padrao" tamanho="grande" />
+      <Botao cor="secundario" tipo="padrao" tamanho="pequeno" />
     </div>
   );
 }
