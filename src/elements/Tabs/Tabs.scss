@@ -1,0 +1,95 @@
+/* Common */
+.tabs ul {
+    display: inline-flex;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: var(--rounded-corners-full);
+
+    li {
+        font-size: var(--font-size-large);
+        font-weight: var(--font-weight-semibold);
+        line-height: var(--line-height-normal);
+        list-style-type: none;
+        padding: var(--spacing-1x) var(--spacing-2x);
+        border-radius: var(--rounded-corners-full);
+        white-space: nowrap;
+        cursor: pointer;
+    }
+}
+
+/* Status (Colors) */
+.tabs-default.tabs-primary ul {
+    background-color: var(--color-primary-lighter-500);
+    
+    li {
+        color: var(--color-primary);
+
+        &:hover {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+    }
+}
+
+.tabs-alternative.tabs-primary ul {
+    background-color: var(--color-clear-lighter-500);
+    
+    li {
+        color: var(--color-primary);
+
+        &:hover {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+    }
+}
+
+.tabs-default.tabs-secondary ul {
+    background-color: var(--color-secondary-lighter-500);
+
+    li {
+        color: var(--color-secondary);
+
+        &:hover {
+            background-color: var(--color-secondary);
+            color: var(--color-white);
+        }
+    }
+}
+
+.tabs-alternative.tabs-secondary ul {
+    background-color: var(--color-clear-lighter-500);
+
+    li {
+        color: var(--color-secondary);
+
+        &:hover {
+            background-color: var(--color-secondary);
+            color: var(--color-white);
+        }
+    }
+}
+
+.tabs-default.tabs-neutral ul {
+    background-color: var(--color-clear-lighter-500);
+
+    li {
+        color: var(--color-murky);
+
+        &:hover {
+            background-color: var(--color-murky);
+            color: var(--color-white);
+        }
+    }
+}
+
+/* Behavior */
+.tabs-space-between ul {
+    justify-content: space-between;
+
+    li {
+        width: 100%;
+        text-align: center;
+    }
+}

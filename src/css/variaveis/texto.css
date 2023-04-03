@@ -7,9 +7,10 @@
     --font-size-extra-small: .75rem;
     --font-size-small: .875rem;
     --font-size-normal: 1rem;
-    --font-size-big: 1.25rem;
-    --font-size-extra-big: 1.5rem;
-    --font-size-giant: 2rem;
+    --font-size-large: 1.125rem;
+    --font-size-extra-large: 1.25rem;
+    --font-size-giant: 1.5rem;
+    --font-size-extra-giant: 2rem;
 
     /* Peso */
     --font-weight-regular: normal;
@@ -18,11 +19,17 @@
     --font-weight-extra-bold: 900;
 
     /* Entrelinha */
-    --line-height-micro: .75rem;
-    --line-height-extra-tiny: .875rem;
-    --line-height-tiny: 1rem;
-    --line-height-little: 1.125rem;
-    --line-height-medium: 1.25rem;
-    --line-height-large: 1.5rem;
-    --line-height-extra-large: 2rem;
+    --line-height-extra-small: .75rem;
+    --line-height-small: .875rem;
+    --line-height-normal: 1rem;
+    --line-height-large: 1.125rem;
+    --line-height-extra-large: 1.25rem;
+    --line-height-giant: 1.5rem;
+    --line-height-extra-giant: 2rem;
 }
+
+
+
+
+
+

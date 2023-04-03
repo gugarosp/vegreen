@@ -1,0 +1,103 @@
+/* Common */
+.input {
+
+    .input-content {
+        display: flex;
+
+        $input-outline-color-active: var(--color-clear);
+        input {
+            width: 100%;
+            box-shadow: inset 1px 0px $input-outline-color-active, inset 0px 1px $input-outline-color-active, inset 0px -1px $input-outline-color-active;
+            border-radius: var(--rounded-corners-full) 0 0 var(--rounded-corners-full);
+            border: 0;
+            font-family: inherit;
+            font-weight: var(--font-weight-regular);
+            color: var(--color-black);
+
+            &::placeholder {
+                color: var(--color-clear-lighter-200);
+            }
+
+            $input-outline-color-focused: var(--color-primary);
+            &:focus, &:not(:placeholder-shown) {
+                box-shadow: inset 1px 0px $input-outline-color-focused, inset 0px 1px $input-outline-color-focused, inset 0px -1px $input-outline-color-focused;
+
+                &+.input-right {
+                    box-shadow: inset -1px 0px $input-outline-color-focused, inset 0px 1px $input-outline-color-focused, inset 0px -1px $input-outline-color-focused;
+                }
+            }
+
+            $input-outline-color-disabled: var(--color-clear);
+            &:disabled {
+                background-color: var(--color-clear-lighter-500);
+                box-shadow: inset 1px 0px $input-outline-color-disabled, inset 0px 1px $input-outline-color-disabled, inset 0px -1px $input-outline-color-disabled;
+                color: var(--color-gray);
+
+                &+.input-right {
+                    background-color: var(--color-clear-lighter-500);
+                    box-shadow: inset -1px 0px $input-outline-color-disabled, inset 0px 1px $input-outline-color-disabled, inset 0px -1px $input-outline-color-disabled;
+                }
+            }
+        }
+
+        .input-right {
+            display: block;
+            box-shadow: inset -1px 0px $input-outline-color-active, inset 0px 1px $input-outline-color-active, inset 0px -1px $input-outline-color-active;
+            border-radius: 0 var(--rounded-corners-full) var(--rounded-corners-full) 0;
+        }
+    }
+
+    &.input-error {
+
+        .input-content {
+    
+            $input-outline-color-error: var(--color-danger);
+            input {
+                box-shadow: inset 1px 0px $input-outline-color-error, inset 0px 1px $input-outline-color-error, inset 0px -1px $input-outline-color-error;
+            
+                &+.input-right {
+                    box-shadow: inset -1px 0px $input-outline-color-error, inset 0px 1px $input-outline-color-error, inset 0px -1px $input-outline-color-error;
+                }
+            }
+        }
+    }
+}
+
+/* Status (Colors) */
+
+/* Size */
+.input-large {
+
+    .input-content {
+
+        $input-large-padding: calc(var(--spacing-1x) + var(--spacing-1hx) - .4px) var(--spacing-2x);
+
+        input {
+            padding: $input-large-padding;
+            padding-right: 0;
+            font-size: var(--font-size-large);
+        }
+
+        .input-right {
+            padding: $input-large-padding;
+        }
+    }
+}
+
+.input-small {
+
+    .input-content {
+
+        $input-small-padding: calc(var(--spacing-1hx) + var(--spacing-2hx) - .8px) var(--spacing-2x);
+
+        input {
+            padding: $input-small-padding;
+            padding-right: 0;
+            font-size: var(--font-size-small);
+        }
+
+        .input-right {
+            padding: $input-small-padding;
+        }
+    }
+}

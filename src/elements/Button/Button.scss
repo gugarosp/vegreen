@@ -1,0 +1,75 @@
+/* Common */
+.button {
+    width: 100%;
+    border-radius: var(--rounded-corners-full);
+    border: 0;
+    font-family: inherit;
+    line-height: var(--line-height-normal);
+    cursor: pointer;
+}
+
+/* Type */
+.button-default {
+    color: var(--color-white);
+}
+
+.button-alternative {
+    background-color: var(--color-white);
+    outline-style: solid;
+}
+
+.button-clean {
+    background-color: var(--color-white);
+}
+
+/* Status (Colors) */
+.button-default {
+    &.button-primary {
+        background-color: var(--color-primary);
+    }
+
+    &.button-secondary {
+        background-color: var(--color-secondary);
+    }
+
+    &.button-inactive {
+        background-color: var(--color-clear);
+    }
+}
+
+.button-alternative, .button-clean {
+    &.button-primary {
+        color: var(--color-primary);
+    }
+
+    &.button-secondary {
+        color: var(--color-secondary);
+    }
+
+    &.button-inactive {
+        color: var(--color-clear);
+    }
+}
+
+/* Size */
+.button-small {
+    padding: var(--spacing-1x) var(--spacing-2x);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-small);
+    
+    &.button-alternative {
+        outline-width: 1px; 
+        outline-offset: -1px;
+    }
+}
+
+.button-large {
+    padding: var(--spacing-2x) var(--spacing-3x);
+    font-weight: var(--font-weight-extra-bold);
+    font-size: var(--font-size-normal);
+
+    &.button-alternative {
+        outline-width: 2px; 
+        outline-offset: -2px;
+    }
+}
