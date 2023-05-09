@@ -1,11 +1,11 @@
-/* Variável */
-@import "variaveis/cores.css";
-@import "variaveis/formas.css";
-@import "variaveis/espacamento.css";
-@import "variaveis/texto.css";
+/* Variables */
+@import "variables/colors.css";
+@import "variables/shapes.css";
+@import "variables/spacing.css";
+@import "variables/texts.css";
 
-/* Fontes */
-@import "fontes/fontes.css";
+/* Fonts */
+@import "fonts/fonts.css";
 
-/* Geral */
+/* General */
 @import "general/general.css";
