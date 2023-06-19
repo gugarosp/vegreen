@@ -4,6 +4,9 @@
 @import "variables/spacing.css";
 @import "variables/texts.css";
 
+/* Icons */
+@import "icons/css/all.css";
+
 /* Fonts */
 @import "fonts/fonts.css";
 
