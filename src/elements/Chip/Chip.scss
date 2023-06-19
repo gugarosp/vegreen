@@ -16,9 +16,9 @@
         color: var(--color-secondary-lighter-500);
     }
 
-    &.chip-alert {
-        background-color: var(--color-alert);
-        color: var(--color-alert-lighter-500);
+    &.chip-warning {
+        background-color: var(--color-warning);
+        color: var(--color-warning-lighter-500);
     }
 
     &.chip-danger {
@@ -32,13 +32,13 @@
     }
 
     &.chip-neutral {
-        background-color: var(--color-neutral);
-        color: var(--color-neutral-lighter-500);
+        background-color: var(--color-gray);
+        color: var(--color-clear-lighter-500);
     }
 
     &.chip-murky {
         background-color: var(--color-murky);
-        color: var(--color-murky-lighter-500);
+        color: var(--color-clear-lighter-500);
     }
 
     &.chip-clear {
@@ -48,12 +48,64 @@
 
     &.chip-black {
         background-color: var(--color-black);
-        color: var(--color-black-lighter-500);
+        color: var(--color-clear-lighter-500);
     }
 
     &.chip-white {
         background-color: var(--color-white);
-        color: var(--color-white-lighter-500);
+        color: var(--color-murky);
+    }
+}
+
+.chip-inactive {
+    &.chip-primary {
+        background-color: var(--color-primary-lighter-500);
+        color: var(--color-primary);
+    }
+
+    &.chip-secondary {
+        background-color: var(--color-secondary-lighter-500);
+        color: var(--color-secondary);
+    }
+
+    &.chip-warning {
+        background-color: var(--color-warning-lighter-500);
+        color: var(--color-warning);
+    }
+
+    &.chip-danger {
+        background-color: var(--color-danger-lighter-500);
+        color: var(--color-danger);
+    }
+
+    &.chip-info {
+        background-color: var(--color-info-lighter-500);
+        color: var(--color-info);
+    }
+
+    &.chip-neutral {
+        background-color: var(--color-clear-lighter-500);
+        color: var(--color-gray);
+    }
+
+    &.chip-murky {
+        background-color: var(--color-clear-lighter-500);
+        color: var(--color-murky);
+    }
+
+    &.chip-clear {
+        background-color: var(--color-clear-lighter-500);
+        color: var(--color-clear);
+    }
+
+    &.chip-black {
+        background-color: var(--color-clear-lighter-500);
+        color: var(--color-black);
+    }
+
+    &.chip-white {
+        background-color: var(--color-clear);
+        color: var(--color-white);
     }
 }
 

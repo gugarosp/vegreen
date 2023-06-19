@@ -15,42 +15,72 @@ function App() {
       <Chip type="active" size="large" status="primary">Chip</Chip>
       <Chip type="active" size="medium" status="primary">Chip</Chip>
       <Chip type="active" size="small" status="primary">Chip</Chip>
+      <Chip type="inactive" size="large" status="primary">Chip</Chip>
+      <Chip type="inactive" size="medium" status="primary">Chip</Chip>
+      <Chip type="inactive" size="small" status="primary">Chip</Chip>
       <br />
       <Chip type="active" size="large" status="secondary">Chip</Chip>
       <Chip type="active" size="medium" status="secondary">Chip</Chip>
       <Chip type="active" size="small" status="secondary">Chip</Chip>
+      <Chip type="inactive" size="large" status="secondary">Chip</Chip>
+      <Chip type="inactive" size="medium" status="secondary">Chip</Chip>
+      <Chip type="inactive" size="small" status="secondary">Chip</Chip>
       <br />
-      <Chip type="active" size="large" status="alert">Chip</Chip>
-      <Chip type="active" size="medium" status="alert">Chip</Chip>
-      <Chip type="active" size="small" status="alert">Chip</Chip>
+      <Chip type="active" size="large" status="warning">Chip</Chip>
+      <Chip type="active" size="medium" status="warning">Chip</Chip>
+      <Chip type="active" size="small" status="warning">Chip</Chip>
+      <Chip type="inactive" size="large" status="warning">Chip</Chip>
+      <Chip type="inactive" size="medium" status="warning">Chip</Chip>
+      <Chip type="inactive" size="small" status="warning">Chip</Chip>
       <br />
       <Chip type="active" size="large" status="danger">Chip</Chip>
       <Chip type="active" size="medium" status="danger">Chip</Chip>
       <Chip type="active" size="small" status="danger">Chip</Chip>
+      <Chip type="inactive" size="large" status="danger">Chip</Chip>
+      <Chip type="inactive" size="medium" status="danger">Chip</Chip>
+      <Chip type="inactive" size="small" status="danger">Chip</Chip>
       <br />
       <Chip type="active" size="large" status="info">Chip</Chip>
       <Chip type="active" size="medium" status="info">Chip</Chip>
       <Chip type="active" size="small" status="info">Chip</Chip>
+      <Chip type="inactive" size="large" status="info">Chip</Chip>
+      <Chip type="inactive" size="medium" status="info">Chip</Chip>
+      <Chip type="inactive" size="small" status="info">Chip</Chip>
       <br />
       <Chip type="active" size="large" status="neutral">Chip</Chip>
       <Chip type="active" size="medium" status="neutral">Chip</Chip>
       <Chip type="active" size="small" status="neutral">Chip</Chip>
+      <Chip type="inactive" size="large" status="neutral">Chip</Chip>
+      <Chip type="inactive" size="medium" status="neutral">Chip</Chip>
+      <Chip type="inactive" size="small" status="neutral">Chip</Chip>
       <br />
       <Chip type="active" size="large" status="murky">Chip</Chip>
       <Chip type="active" size="medium" status="murky">Chip</Chip>
       <Chip type="active" size="small" status="murky">Chip</Chip>
+      <Chip type="inactive" size="large" status="murky">Chip</Chip>
+      <Chip type="inactive" size="medium" status="murky">Chip</Chip>
+      <Chip type="inactive" size="small" status="murky">Chip</Chip>
       <br />
       <Chip type="active" size="large" status="clear">Chip</Chip>
       <Chip type="active" size="medium" status="clear">Chip</Chip>
       <Chip type="active" size="small" status="clear">Chip</Chip>
+      <Chip type="inactive" size="large" status="clear">Chip</Chip>
+      <Chip type="inactive" size="medium" status="clear">Chip</Chip>
+      <Chip type="inactive" size="small" status="clear">Chip</Chip>
       <br />
-      <Chip type="active" size="large" status="blak">Chip</Chip>
-      <Chip type="active" size="medium" status="blak">Chip</Chip>
-      <Chip type="active" size="small" status="blak">Chip</Chip>
+      <Chip type="active" size="large" status="black">Chip</Chip>
+      <Chip type="active" size="medium" status="black">Chip</Chip>
+      <Chip type="active" size="small" status="black">Chip</Chip>
+      <Chip type="inactive" size="large" status="black">Chip</Chip>
+      <Chip type="inactive" size="medium" status="black">Chip</Chip>
+      <Chip type="inactive" size="small" status="black">Chip</Chip>
       <br />
       <Chip type="active" size="large" status="white">Chip</Chip>
       <Chip type="active" size="medium" status="white">Chip</Chip>
       <Chip type="active" size="small" status="white">Chip</Chip>
+      <Chip type="inactive" size="large" status="white">Chip</Chip>
+      <Chip type="inactive" size="medium" status="white">Chip</Chip>
+      <Chip type="inactive" size="small" status="white">Chip</Chip>
 
       <br />
 
