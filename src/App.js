@@ -2,6 +2,7 @@ import Button from './elements/Button/Button';
 import Tabs from './elements/Tabs/Tabs';
 import Input from './elements/Input/Input';
 import Chip from './elements/Chip/Chip';
+import Textarea from './elements/Textarea/Textarea';
 
 function App() {
   const tabsContent = [
@@ -12,6 +13,15 @@ function App() {
 
   return (
     <div className="App">
+
+      <Textarea inputType="text" placeholder="Type Something" size="large" disabled=""></Textarea>
+      <Textarea inputType="number" placeholder="123" size="small" disabled=""></Textarea>
+
+      <Textarea inputType="password" size="large" disabled="disabled">Textarea</Textarea>
+      <Textarea inputType="date" size="small" disabled="disabled">Textarea</Textarea>
+
+      <br />
+
       <Chip type="active" size="large" status="primary">Chip</Chip>
       <Chip type="active" size="medium" status="primary">Chip</Chip>
       <Chip type="active" size="small" status="primary">Chip</Chip>
@@ -84,7 +94,7 @@ function App() {
 
       <br />
 
-      <Input inputType="text" placeholder="Type Something"size="large" disabled=""></Input>
+      <Input inputType="text" placeholder="Type Something" size="large" disabled=""></Input>
       <Input inputType="number" placeholder="123" size="small" disabled=""></Input>
 
       <Input inputType="password" size="large" disabled="disabled">Input</Input>

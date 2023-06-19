@@ -1,0 +1,93 @@
+/* Common */
+.textarea {
+
+    .textarea-content {
+        display: flex;
+
+        $textarea-outline-color-active: var(--color-clear);
+        textarea {
+            width: 100%;
+            box-shadow: inset 1px 0px $textarea-outline-color-active, inset 0px 1px $textarea-outline-color-active, inset 0px -1px $textarea-outline-color-active, inset -1px 0px $textarea-outline-color-active;
+            border: 0;
+            font-family: inherit;
+            font-weight: var(--font-weight-regular);
+            color: var(--color-black);
+
+            &::placeholder {
+                color: var(--color-clear-lighter-200);
+            }
+
+            $textarea-outline-color-focused: var(--color-primary);
+            &:focus, &:not(:placeholder-shown) {
+                box-shadow: inset 1px 0px $textarea-outline-color-focused, inset 0px 1px $textarea-outline-color-focused, inset 0px -1px $textarea-outline-color-focused, inset -1px 0px $textarea-outline-color-focused;
+            }
+
+            $textarea-outline-color-disabled: var(--color-clear);
+            &:disabled {
+                background-color: var(--color-clear-lighter-500);
+                box-shadow: inset 1px 0px $textarea-outline-color-disabled, inset 0px 1px $textarea-outline-color-disabled, inset 0px -1px $textarea-outline-color-disabled, inset -1px 0px $textarea-outline-color-disabled;
+                color: var(--color-gray);
+            }
+        }
+
+        .textarea-right {
+            display: block;
+            box-shadow: inset -1px 0px $textarea-outline-color-active, inset 0px 1px $textarea-outline-color-active, inset 0px -1px $textarea-outline-color-active;
+            border-radius: 0 var(--rounded-corners-full) var(--rounded-corners-full) 0;
+        }
+    }
+
+    &.textarea-error {
+
+        .textarea-content {
+    
+            $textarea-outline-color-error: var(--color-danger);
+            textarea {
+                box-shadow: inset 1px 0px $textarea-outline-color-error, inset 0px 1px $textarea-outline-color-error, inset 0px -1px $textarea-outline-color-error;
+            
+                &+.textarea-right {
+                    box-shadow: inset -1px 0px $textarea-outline-color-error, inset 0px 1px $textarea-outline-color-error, inset 0px -1px $textarea-outline-color-error;
+                }
+            }
+        }
+    }
+}
+
+/* Size */
+.textarea-large {
+
+    .textarea-content {
+
+        $textarea-large-padding: calc(var(--spacing-1x) + var(--spacing-1hx) - .4px) var(--spacing-2x);
+
+        textarea {
+            padding: $textarea-large-padding;
+            padding-right: 0;
+            border-radius: var(--rounded-corners-2x);
+            font-size: var(--font-size-large);
+        }
+
+        .textarea-right {
+            padding: $textarea-large-padding;
+        }
+    }
+}
+
+.textarea-small {
+
+    .textarea-content {
+
+        $textarea-small-padding: calc(var(--spacing-1hx) + var(--spacing-2hx) - .8px) var(--spacing-2x);
+
+        textarea {
+            padding: $textarea-small-padding;
+            padding-right: 0;
+            border-radius: var(--rounded-corners-1x);
+            font-size: var(--font-size-small);
+        }
+
+        .textarea-right {
+            padding: $textarea-small-padding;
+        }
+    }
+}
