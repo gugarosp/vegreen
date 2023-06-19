@@ -1,6 +1,7 @@
 import Button from './elements/Button/Button';
 import Tabs from './elements/Tabs/Tabs';
 import Input from './elements/Input/Input';
+import Chip from './elements/Chip/Chip';
 
 function App() {
   const tabsContent = [
@@ -11,6 +12,47 @@ function App() {
 
   return (
     <div className="App">
+      <Chip type="active" size="large" status="primary">Chip</Chip>
+      <Chip type="active" size="medium" status="primary">Chip</Chip>
+      <Chip type="active" size="small" status="primary">Chip</Chip>
+      <br />
+      <Chip type="active" size="large" status="secondary">Chip</Chip>
+      <Chip type="active" size="medium" status="secondary">Chip</Chip>
+      <Chip type="active" size="small" status="secondary">Chip</Chip>
+      <br />
+      <Chip type="active" size="large" status="alert">Chip</Chip>
+      <Chip type="active" size="medium" status="alert">Chip</Chip>
+      <Chip type="active" size="small" status="alert">Chip</Chip>
+      <br />
+      <Chip type="active" size="large" status="danger">Chip</Chip>
+      <Chip type="active" size="medium" status="danger">Chip</Chip>
+      <Chip type="active" size="small" status="danger">Chip</Chip>
+      <br />
+      <Chip type="active" size="large" status="info">Chip</Chip>
+      <Chip type="active" size="medium" status="info">Chip</Chip>
+      <Chip type="active" size="small" status="info">Chip</Chip>
+      <br />
+      <Chip type="active" size="large" status="neutral">Chip</Chip>
+      <Chip type="active" size="medium" status="neutral">Chip</Chip>
+      <Chip type="active" size="small" status="neutral">Chip</Chip>
+      <br />
+      <Chip type="active" size="large" status="murky">Chip</Chip>
+      <Chip type="active" size="medium" status="murky">Chip</Chip>
+      <Chip type="active" size="small" status="murky">Chip</Chip>
+      <br />
+      <Chip type="active" size="large" status="clear">Chip</Chip>
+      <Chip type="active" size="medium" status="clear">Chip</Chip>
+      <Chip type="active" size="small" status="clear">Chip</Chip>
+      <br />
+      <Chip type="active" size="large" status="blak">Chip</Chip>
+      <Chip type="active" size="medium" status="blak">Chip</Chip>
+      <Chip type="active" size="small" status="blak">Chip</Chip>
+      <br />
+      <Chip type="active" size="large" status="white">Chip</Chip>
+      <Chip type="active" size="medium" status="white">Chip</Chip>
+      <Chip type="active" size="small" status="white">Chip</Chip>
+
+      <br />
 
       <Input inputType="text" placeholder="Type Something"size="large" disabled=""></Input>
       <Input inputType="number" placeholder="123" size="small" disabled=""></Input>
