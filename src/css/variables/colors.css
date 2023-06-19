@@ -25,7 +25,20 @@
     --color-secondary-darker-400: #4E0A1E;
     --color-secondary-darker-500: #27050F;
 
-    /* Secondary */
+    /* Warning */
+    --color-warning-lighter-500: #FCF2D9;
+    --color-warning-lighter-400: #F9E6B2;
+    --color-warning-lighter-300: #F6D98C;
+    --color-warning-lighter-200: #F2CC66;
+    --color-warning-lighter-100: #EFC03F;
+    --color-warning: #ECB319;
+    --color-warning-darker-100: #C59515;
+    --color-warning-darker-200: #9D7711;
+    --color-warning-darker-300: #765A0D;
+    --color-warning-darker-400: #4F3C08;
+    --color-warning-darker-500: #271E04;
+
+    /* Danger */
     --color-danger-lighter-500: #FADADA;
     --color-danger-lighter-400: #F5B4B4;
     --color-danger-lighter-300: #F18F8F;
@@ -37,6 +50,19 @@
     --color-danger-darker-300: #710F0F;
     --color-danger-darker-400: #4B0A0A;
     --color-danger-darker-500: #260505;
+
+    /* Info */
+    --color-info-lighter-500: #DAE8FA;
+    --color-info-lighter-400: #B6D0F5;
+    --color-info-lighter-300: #91B9F0;
+    --color-info-lighter-200: #6CA2EA;
+    --color-info-lighter-100: #488AE5;
+    --color-info: #2373E0;
+    --color-info-darker-100: #1D60BB;
+    --color-info-darker-200: #174D95;
+    --color-info-darker-300: #123A70;
+    --color-info-darker-400: #0C264B;
+    --color-info-darker-500: #061325;
 
     /* Neutrals */
     --color-white: #FFFFFF;
