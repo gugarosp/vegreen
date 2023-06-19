@@ -15,7 +15,10 @@ function App() {
   return (
     <div className="App">
 
-      <Checkbox></Checkbox>
+      <Checkbox spacing="far" labelPosition="left">Texto</Checkbox>
+      <Checkbox spacing="far" labelPosition="right">Texto</Checkbox>
+      <Checkbox spacing="together" labelPosition="left">Texto</Checkbox><br />
+      <Checkbox spacing="together" labelPosition="right">Texto</Checkbox>
 
       <br />
 
