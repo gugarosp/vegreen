@@ -1,0 +1,21 @@
+.checkbox {
+    display: inline-block;
+    cursor: pointer;
+
+    input {
+        display: none;
+
+        &:checked ~ .checkbox-box {
+            background-color: var(--color-primary);
+            outline: 0;
+        }
+    }
+
+    .checkbox-box {
+        width: 24px;
+        height: 24px;
+        border-radius: var(--rounded-corners-1hx);
+        outline: 2px solid var(--color-clear);
+        outline-offset: -2px;
+    }
+}

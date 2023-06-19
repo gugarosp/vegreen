@@ -3,16 +3,21 @@ import Tabs from './elements/Tabs/Tabs';
 import Input from './elements/Input/Input';
 import Chip from './elements/Chip/Chip';
 import Textarea from './elements/Textarea/Textarea';
+import Checkbox from './elements/Checkbox/Checkbox';
 
 function App() {
   const tabsContent = [
     'Item 1',
     'Item 2',
     'Item 3'
-  ]
+  ];
 
   return (
     <div className="App">
+
+      <Checkbox></Checkbox>
+
+      <br />
 
       <Textarea inputType="text" placeholder="Type Something" size="large" disabled=""></Textarea>
       <Textarea inputType="number" placeholder="123" size="small" disabled=""></Textarea>
@@ -98,7 +103,7 @@ function App() {
       <Input inputType="number" placeholder="123" size="small" disabled=""></Input>
 
       <Input inputType="password" size="large" disabled="disabled">Input</Input>
-      <Input inputType="date" size="small" disabled="disabled">Input</Input>
+      <Input inputType="date" size="small" disabled="disabled">1999-01-01</Input>
 
       <br />
 
