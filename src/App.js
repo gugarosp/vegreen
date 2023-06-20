@@ -4,6 +4,7 @@ import Input from './elements/Input/Input';
 import Chip from './elements/Chip/Chip';
 import Textarea from './elements/Textarea/Textarea';
 import Checkbox from './elements/Checkbox/Checkbox';
+import Radio from './elements/Radio/Radio';
 
 function App() {
   const tabsContent = [
@@ -14,6 +15,13 @@ function App() {
 
   return (
     <div className="App">
+
+      <Radio name="radio-input" spacing="far" labelPosition="left">Texto</Radio>
+      <Radio name="radio-input" spacing="far" labelPosition="right">Texto</Radio>
+      <Radio name="radio-input" spacing="together" labelPosition="left">Texto</Radio><br />
+      <Radio name="radio-input" spacing="together" labelPosition="right">Texto</Radio>
+
+      <br /><br />
 
       <Checkbox spacing="far" labelPosition="left">Texto</Checkbox>
       <Checkbox spacing="far" labelPosition="right">Texto</Checkbox>

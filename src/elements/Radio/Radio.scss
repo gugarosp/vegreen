@@ -1,0 +1,83 @@
+.radio {
+    align-items: center;
+    cursor: pointer;
+
+    /* Checkbox Label */
+    .radio-label {
+        font-size: var(--font-size-small);
+        font-weight: var(--font-weight-semibold);
+        color: var(--color-gray);
+    }
+
+    /* Checkbox Element */
+    .radio-box {
+        width: 24px;
+        height: 24px;
+        border-radius: var(--rounded-corners-full);
+        outline: 2px solid var(--color-clear);
+        outline-offset: -2px;
+    }
+
+    .radio-check {
+        display: none;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        font-size: var(--font-size-small);
+        color: var(--color-white);
+    }
+
+    /* Checkbox Label Position */
+    &.radio-left {
+        flex-direction: row;
+    }
+
+    &.radio-right {
+        flex-direction: row-reverse;
+    }
+
+    /* Checkbox Spacing */
+    &.radio-far {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &.radio-together {
+        display: inline-flex;
+        gap: var(--spacing-1x);
+    }
+
+    /* Input Relationships */
+    input {
+        display: none;
+
+        &:checked {
+
+            ~.radio-label {
+                color: var(--color-primary);
+            }
+
+            ~.radio-element {
+                .radio-box {
+                    outline-color: var(--color-primary);
+                }
+
+                .radio-check {
+                    display: inline-block;
+                    background-color: var(--color-primary);
+                    border-radius: var(--rounded-corners-full);
+                    border: 2px solid var(--color-primary);
+                    outline: 4px solid var(--color-white);
+                    outline-offset: -6px;
+                }
+            }
+        }
+    }
+}
+
+/* Exception For Firefox */
+@-moz-document url-prefix() {
+    .radio input:checked ~ .radio-element .radio-check {
+        outline-offset: -5.5px;
+    }
+}
