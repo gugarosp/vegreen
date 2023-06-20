@@ -16,17 +16,20 @@ function App() {
   return (
     <div className="App">
 
+
       <Radio name="radio-input" spacing="far" labelPosition="left">Texto</Radio>
       <Radio name="radio-input" spacing="far" labelPosition="right">Texto</Radio>
       <Radio name="radio-input" spacing="together" labelPosition="left">Texto</Radio><br />
-      <Radio name="radio-input" spacing="together" labelPosition="right">Texto</Radio>
+      <Radio name="radio-input" spacing="together" labelPosition="right">Texto</Radio><br />
+      <Radio name="radio-input" spacing="none" labelPosition="none"></Radio>
 
       <br /><br />
 
       <Checkbox spacing="far" labelPosition="left">Texto</Checkbox>
       <Checkbox spacing="far" labelPosition="right">Texto</Checkbox>
       <Checkbox spacing="together" labelPosition="left">Texto</Checkbox><br />
-      <Checkbox spacing="together" labelPosition="right">Texto</Checkbox>
+      <Checkbox spacing="together" labelPosition="right">Texto</Checkbox><br />
+      <Checkbox spacing="none" labelPosition="none"></Checkbox>
 
       <br />
 

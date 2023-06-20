@@ -7,8 +7,8 @@ const Radio = (props) => {
 
             <div className="radio-label">{props.children}</div>
 
-            <div class="radio-element">
-                <div class="radio-check"></div>
+            <div className="radio-element">
+                <div className="radio-check"></div>
                 <div className="radio-box"></div>
             </div>
         </label>
