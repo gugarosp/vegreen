@@ -58,11 +58,10 @@
 
     .textarea-content {
 
-        $textarea-large-padding: var(--spacing-1x);
+        $textarea-large-padding: var(--spacing-2x);
 
         textarea {
             padding: $textarea-large-padding;
-            padding-right: 0;
             border-radius: var(--rounded-corners-2x);
             font-size: var(--font-size-large);
         }
@@ -77,11 +76,10 @@
 
     .textarea-content {
 
-        $textarea-small-padding: var(--spacing-1x);
+        $textarea-small-padding: var(--spacing-2x);
 
         textarea {
             padding: $textarea-small-padding;
-            padding-right: 0;
             border-radius: var(--rounded-corners-1x);
             font-size: var(--font-size-small);
         }
