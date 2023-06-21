@@ -1,0 +1,82 @@
+.switch {
+    align-items: center;
+    cursor: pointer;
+
+    /* Checkbox Label */
+    .switch-label {
+        font-size: var(--font-size-small);
+        font-weight: var(--font-weight-semibold);
+        color: var(--color-gray);
+    }
+
+    /* Checkbox Element */
+    .switch-element {
+        position: relative;
+        width: 32px;
+        height: 18px;
+    }
+
+    .switch-handler {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        border-radius: var(--rounded-corners-full);
+        background-color: var(--color-clear);
+        transition: left 300ms, background-color 300ms;
+    }
+
+    .switch-background {
+        position: relative;
+        top: 3px;
+        width: 100%;
+        height: 12px;
+        border-radius: var(--rounded-corners-full);
+        background-color: var(--color-clear-lighter-400);
+        font-size: var(--font-size-small);
+    }
+
+    /* Checkbox Label Position */
+    &.switch-left {
+        flex-direction: row;
+    }
+
+    &.switch-right {
+        flex-direction: row-reverse;
+    }
+
+    /* Checkbox Spacing */
+    &.switch-far {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &.switch-together {
+        display: inline-flex;
+        gap: var(--spacing-1x);
+    }
+
+    /* Input Relationships */
+    input {
+        display: none;
+
+        &:checked  {
+
+            ~ .switch-label {
+                color: var(--color-primary);
+            }
+        
+            ~ .switch-element {
+                .switch-handler {
+                    background-color: var(--color-primary);
+                    left: 14px;
+                }
+
+                .switch-background {
+                    background-color: var(--color-primary-lighter-500);
+                }
+            }
+        }
+    }
+}

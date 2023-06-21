@@ -5,6 +5,7 @@ import Chip from './elements/Chip/Chip';
 import Textarea from './elements/Textarea/Textarea';
 import Checkbox from './elements/Checkbox/Checkbox';
 import Radio from './elements/Radio/Radio';
+import Switch from './elements/Switch/Switch';
 
 function App() {
   const tabsContent = [
@@ -16,6 +17,13 @@ function App() {
   return (
     <div className="App">
 
+      <Switch spacing="far" labelPosition="left">Texto</Switch>
+      <Switch spacing="far" labelPosition="right">Texto</Switch>
+      <Switch spacing="together" labelPosition="left">Texto</Switch><br />
+      <Switch spacing="together" labelPosition="right">Texto</Switch><br />
+      <Switch spacing="none" labelPosition="none"></Switch>
+
+      <br /><br />
 
       <Radio name="radio-input" spacing="far" labelPosition="left">Texto</Radio>
       <Radio name="radio-input" spacing="far" labelPosition="right">Texto</Radio>
