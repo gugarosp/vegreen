@@ -1,0 +1,130 @@
+/* Common */
+.icon {
+    display: inline-block;
+}
+
+.icon i,
+.icon i::before {
+    display: block;
+}
+
+/* Status */
+.icon-primary {
+    color: var(--color-primary);
+}
+
+.icon-secondary {
+    color: var(--color-secondary);
+}
+
+.icon-warning {
+    color: var(--color-warning);
+}
+
+.icon-danger {
+    color: var(--color-danger);
+}
+
+.icon-info {
+    color: var(--color-info);
+}
+
+.icon-neutral {
+    color: var(--color-gray);
+}
+
+.icon-murky {
+    color: var(--color-murky);
+}
+
+.icon-clear {
+    color: var(--color-clear);
+}
+
+.icon-black {
+    color: var(--color-black);
+}
+
+.icon-white {
+    color: var(--color-white);
+}
+
+/* Size */
+.icon-mini {
+    font-size: var(--font-size-extra-small);
+    line-height: var(--line-height-extra-small);
+}
+
+.icon-small {
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+}
+
+.icon-medium {
+    font-size: var(--font-size-medium);
+}
+
+.icon-large {
+    font-size: var(--font-size-giant);
+}
+
+/* Type */
+.icon-nobackground {
+    padding: var(--spacing-0x);
+}
+
+.icon-background {
+    padding: var(--spacing-1x);
+    border-radius: var(--rounded-corners-full);
+    color: var(--color-white);
+
+    // Type with Size
+    &.icon-mini {
+        padding: calc(var(--spacing-1x) - var(--spacing-2hx));
+    }
+
+    &.icon-small {
+        padding: calc(var(--spacing-1x) - 1px);
+    }
+
+    // Type with Status
+    &.icon-primary {
+        background-color: var(--color-primary);
+    }
+    
+    &.icon-secondary {
+        background-color: var(--color-secondary);
+    }
+    
+    &.icon-warning {
+        background-color: var(--color-warning);
+    }
+    
+    &.icon-danger {
+        background-color: var(--color-danger);
+    }
+    
+    &.icon-info {
+        background-color: var(--color-info);
+    }
+    
+    &.icon-neutral {
+        background-color: var(--color-gray);
+    }
+    
+    &.icon-murky {
+        background-color: var(--color-murky);
+    }
+    
+    &.icon-clear {
+        background-color: var(--color-clear);
+    }
+    
+    &.icon-black {
+        background-color: var(--color-black);
+    }
+    
+    &.icon-white {
+        background-color: var(--color-white);
+    }
+}
