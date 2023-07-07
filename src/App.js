@@ -127,11 +127,11 @@ function App() {
 
       <br />
 
-      <Textarea inputType="text" placeholder="Type Something" size="large" disabled=""></Textarea>
-      <Textarea inputType="number" placeholder="123" size="small" disabled=""></Textarea>
+      <Textarea placeholder="Type Something" size="large" disabled=""></Textarea>
+      <Textarea placeholder="123" size="small" disabled=""></Textarea>
 
-      <Textarea inputType="password" size="large" disabled="disabled">Textarea</Textarea>
-      <Textarea inputType="date" size="small" disabled="disabled">Textarea</Textarea>
+      <Textarea size="large" disabled="disabled">Textarea</Textarea>
+      <Textarea size="small" disabled="disabled">Textarea</Textarea>
 
       <br />
 
