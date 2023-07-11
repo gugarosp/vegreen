@@ -18,46 +18,87 @@ function App() {
   return (
     <div className="App">
 
-      <Icon icon="fas fa-heart" type="nobackground" size="mini" status="primary"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="mini" status="secondary"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="mini" status="warning"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="mini" status="danger"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="mini" status="info"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="mini" status="neutral"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="mini" status="murky"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="mini" status="clear"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="mini" status="black"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="mini" status="white"></Icon><br />
-      <Icon icon="fas fa-heart" type="nobackground" size="small" status="primary"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="small" status="secondary"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="small" status="warning"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="small" status="danger"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="small" status="info"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="small" status="neutral"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="small" status="murky"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="small" status="clear"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="small" status="black"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="small" status="white"></Icon><br />
-      <Icon icon="fas fa-heart" type="nobackground" size="medium" status="primary"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="medium" status="secondary"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="medium" status="warning"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="medium" status="danger"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="medium" status="info"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="medium" status="neutral"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="medium" status="murky"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="medium" status="clear"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="medium" status="black"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="medium" status="white"></Icon><br />
-      <Icon icon="fas fa-heart" type="nobackground" size="large" status="primary"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="large" status="secondary"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="large" status="warning"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="large" status="danger"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="large" status="info"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="large" status="neutral"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="large" status="murky"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="large" status="clear"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="large" status="black"></Icon>
-      <Icon icon="fas fa-heart" type="nobackground" size="large" status="white"></Icon><br />
+      <Icon icon="fas fa-heart" type="no-background" size="mini" status="primary"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="mini" status="secondary"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="mini" status="warning"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="mini" status="danger"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="mini" status="info"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="mini" status="neutral"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="mini" status="murky"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="mini" status="clear"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="mini" status="black"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="mini" status="white"></Icon><br />
+      <Icon icon="fas fa-heart" type="no-background" size="small" status="primary"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="small" status="secondary"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="small" status="warning"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="small" status="danger"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="small" status="info"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="small" status="neutral"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="small" status="murky"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="small" status="clear"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="small" status="black"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="small" status="white"></Icon><br />
+      <Icon icon="fas fa-heart" type="no-background" size="medium" status="primary"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="medium" status="secondary"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="medium" status="warning"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="medium" status="danger"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="medium" status="info"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="medium" status="neutral"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="medium" status="murky"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="medium" status="clear"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="medium" status="black"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="medium" status="white"></Icon><br />
+      <Icon icon="fas fa-heart" type="no-background" size="large" status="primary"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="large" status="secondary"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="large" status="warning"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="large" status="danger"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="large" status="info"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="large" status="neutral"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="large" status="murky"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="large" status="clear"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="large" status="black"></Icon>
+      <Icon icon="fas fa-heart" type="no-background" size="large" status="white"></Icon><br />
+
+      <Icon icon="fas fa-heart" type="faux-background" size="mini" status="primary"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="mini" status="secondary"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="mini" status="warning"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="mini" status="danger"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="mini" status="info"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="mini" status="neutral"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="mini" status="murky"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="mini" status="clear"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="mini" status="black"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="mini" status="white"></Icon><br />
+      <Icon icon="fas fa-heart" type="faux-background" size="small" status="primary"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="small" status="secondary"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="small" status="warning"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="small" status="danger"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="small" status="info"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="small" status="neutral"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="small" status="murky"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="small" status="clear"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="small" status="black"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="small" status="white"></Icon><br />
+      <Icon icon="fas fa-heart" type="faux-background" size="medium" status="primary"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="medium" status="secondary"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="medium" status="warning"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="medium" status="danger"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="medium" status="info"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="medium" status="neutral"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="medium" status="murky"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="medium" status="clear"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="medium" status="black"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="medium" status="white"></Icon><br />
+      <Icon icon="fas fa-heart" type="faux-background" size="large" status="primary"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="large" status="secondary"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="large" status="warning"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="large" status="danger"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="large" status="info"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="large" status="neutral"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="large" status="murky"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="large" status="clear"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="large" status="black"></Icon>
+      <Icon icon="fas fa-heart" type="faux-background" size="large" status="white"></Icon><br />
 
       <Icon icon="fas fa-heart" type="background" size="mini" status="primary"></Icon>
       <Icon icon="fas fa-heart" type="background" size="mini" status="secondary"></Icon>

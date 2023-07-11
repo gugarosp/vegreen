@@ -69,8 +69,12 @@
 }
 
 /* Type */
-.icon-nobackground {
+.icon-no-background {
     padding: var(--spacing-0x);
+}
+
+.icon-faux-background {
+    padding: var(--spacing-1x);
 }
 
 .icon-background {
