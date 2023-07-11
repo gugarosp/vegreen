@@ -7,6 +7,7 @@ import Checkbox from './elements/Checkbox/Checkbox';
 import Radio from './elements/Radio/Radio';
 import Switch from './elements/Switch/Switch';
 import Icon from './elements/Icon/Icon';
+import ChatMessage from './elements/ChatMessage/ChatMessage';
 
 function App() {
   const tabsContent = [
@@ -17,6 +18,11 @@ function App() {
 
   return (
     <div className="App">
+
+      <ChatMessage type="received" dateHour="2:25PM">Texto</ChatMessage>
+      <ChatMessage type="sent" dateHour="2:27PM">Texto</ChatMessage>
+      
+      <br />
 
       <Icon icon="fas fa-heart" type="no-background" size="mini" status="primary"></Icon>
       <Icon icon="fas fa-heart" type="no-background" size="mini" status="secondary"></Icon>

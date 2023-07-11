@@ -1,0 +1,78 @@
+/* Common */
+.chat-message {
+    display: flex;
+    align-items: end;
+
+    &::before,
+    &::after {
+        height: 16px;
+        width: 16px;
+    }
+    
+    .chat-message-content {
+        display: inline-flex;
+        flex-direction: column;
+        gap: var(--spacing-1hx);
+        padding: var(--spacing-1x);
+        font-weight: var(--font-weight-semibold);
+    }
+
+}
+
+/* Text */
+.chat-message-text {
+    color: var(--color-black);
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-large);
+}
+
+/*  Date and Hour */
+.chat-message-date-hour {
+    font-size: var(--line-height-extra-small);
+    line-height: var(--line-height-large);
+}
+
+/* Type */
+.chat-message-received {
+    justify-content: start;
+    
+    &::before,
+    .chat-message-content {
+        background-color: var(--color-clear-lighter-500);
+    }
+
+    &::before {
+        content: "";
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    }
+
+    .chat-message-content {
+        border-radius: var(--rounded-corners-1x) var(--rounded-corners-1x) var(--rounded-corners-1x) var(--rounded-corners-0x);
+    }
+
+    .chat-message-date-hour {
+        color: var(--color-gray);
+    }
+}
+
+.chat-message-sent {
+    justify-content: end;
+
+    &::after,
+    .chat-message-content {
+        background-color: var(--color-primary-lighter-500);
+    }
+
+    &::after {
+        content: "";
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    }
+    
+    .chat-message-content {
+        border-radius: var(--rounded-corners-1x) var(--rounded-corners-1x) var(--rounded-corners-0x) var(--rounded-corners-1x);
+    }
+
+    .chat-message-date-hour {
+        color: var(--color-primary);
+    }
+}

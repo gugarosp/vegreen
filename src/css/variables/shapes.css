@@ -3,6 +3,7 @@
     /* Cantos Arredondadas */
     --rounded-corners-2hx: 2px;
     --rounded-corners-1hx: 4px;
+    --rounded-corners-0x: 0;
     --rounded-corners-1x: 8px;
     --rounded-corners-2x: 16px;
     --rounded-corners-3x: 24px;
