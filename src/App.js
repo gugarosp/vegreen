@@ -8,6 +8,7 @@ import Radio from './elements/Radio/Radio';
 import Switch from './elements/Switch/Switch';
 import Icon from './elements/Icon/Icon';
 import ChatMessage from './elements/ChatMessage/ChatMessage';
+import Select from './elements/Select/Select';
 
 function App() {
   const tabsContent = [
@@ -16,13 +17,39 @@ function App() {
     'Item 3'
   ];
 
+  const selectContent = [
+    'Option 1',
+    'Option 2',
+    'Option 3'
+  ];
+
+
   return (
     <div className="App">
+
+      <Select items={selectContent} type="active" size="large"></Select>
+      <Select items={selectContent} type="active" size="medium"></Select>
+      <Select items={selectContent} type="active" size="small"></Select>
+
+      {/* <Select items={selectContent} type="active" size="small"></Select>
+      <Select items={selectContent} type="active" size="medium"></Select>
+      <Select items={selectContent} type="active" size="large"></Select>
+      <Select items={selectContent} type="selected" size="small"></Select>
+      <Select items={selectContent} type="selected" size="medium"></Select>
+      <Select items={selectContent} type="selected" size="large"></Select>
+      <Select items={selectContent} type="error" size="small"></Select>
+      <Select items={selectContent} type="error" size="medium"></Select>
+      <Select items={selectContent} type="error" size="large"></Select>
+      <Select items={selectContent} type="disabled" size="small"></Select>
+      <Select items={selectContent} type="disabled" size="medium"></Select>
+      <Select items={selectContent} type="disabled" size="large"></Select> */}
+
+      <br /><br />
 
       <ChatMessage type="received" dateHour="2:25PM">Texto</ChatMessage>
       <ChatMessage type="sent" dateHour="2:27PM">Texto</ChatMessage>
       
-      <br />
+      <br /><br />
 
       <Icon icon="fas fa-heart" type="no-background" size="mini" status="primary"></Icon>
       <Icon icon="fas fa-heart" type="no-background" size="mini" status="secondary"></Icon>

@@ -1,0 +1,189 @@
+/* Common */
+.select {
+    cursor: pointer;
+    user-select: none;
+
+    .select-content {
+        position: relative;
+
+        // Chosen item
+        .select-chosen {
+            display: flex;
+            gap: var(--spacing-2x);
+            z-index: 2;
+            position: relative;
+            border-radius: var(--rounded-corners-full);
+            box-shadow: inset 1px 0px var(--color-clear), inset 0px 1px var(--color-clear), inset 0px -1px var(--color-clear), inset -1px 0px var(--color-clear);
+
+            // Chosen item text
+            .select-text {
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            // Arrow down
+            &::after {
+                content: "\f078";
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+
+
+        // Dropdown items
+        .select-dropdown {
+            width: 100%;
+            height: 0;
+            position: absolute;
+            top: 50%;
+            z-index: 1;
+            background-color: var(--color-clear-lighter-500);
+            box-shadow: inset 1px 0px var(--color-clear), inset -1px 0px var(--color-clear);
+            transition: height 500ms;
+
+            .select-dropdown-content {
+                position: relative;
+                top: 0;
+                display: grid;
+                grid-template-rows: 0fr;
+                transition: top 500ms, grid-template-rows 500ms;
+
+                ul {
+                    overflow: hidden;
+                    margin: 0;
+                    padding: 0;
+                    background-color: var(--color-clear-lighter-500);
+                    box-shadow: inset 1px 0px var(--color-clear), inset -1px 0px var(--color-clear), inset 1px -1px var(--color-clear);
+                }
+            }
+
+        }
+        
+    }
+
+    // Select Opened
+    &.select-opened {
+
+        .select-content {
+    
+            .select-chosen {
+                z-index: 4;
+            }
+
+        }
+
+        .select-dropdown {
+            height: 50%;
+            z-index: 3;
+
+            .select-dropdown-content {
+                top: 100%;
+                grid-template-rows: 1fr;
+            }
+
+        }
+        
+    }
+
+    // Select tag
+    select {
+        display: none;
+    }
+}
+
+/* Size */
+.select-large {
+    .select-chosen,
+    li {
+        
+        font-size: var(--font-size-large);
+        line-height: var(--line-height-large);
+    }
+
+    .select-chosen {
+        padding: calc(var(--spacing-2x) - 1px) var(--spacing-2x);
+    }
+
+    ul {
+        border-radius: 0 0 var(--rounded-corners-3x) var(--rounded-corners-3x);
+    }
+
+    li {
+        padding: var(--spacing-2x);
+    }
+}
+
+.select-medium,
+.select-small {
+    .select-chosen,
+    li {
+        font-size: var(--font-size-small);
+        line-height: var(--line-height-small);
+    }
+    
+    li {
+        padding: var(--spacing-1x) var(--spacing-2x);
+    }
+}
+
+.select-medium {
+    .select-chosen {
+        padding: calc(var(--spacing-1x) + 1px) var(--spacing-2x);
+    }
+
+    ul {
+        border-radius: 0 0 var(--rounded-corners-2x) var(--rounded-corners-2x);
+    }
+}
+
+.select-small {
+    .select-chosen {
+        padding: calc(var(--spacing-1hx) + 1px) var(--spacing-2x);
+    }
+
+    ul {
+        border-radius: 0 0 calc(var(--rounded-corners-2x) - var(--rounded-corners-1hx)) calc(var(--rounded-corners-2x) - var(--rounded-corners-1hx));
+    }
+}
+
+/* Type */
+@mixin type($color) {
+    .select-chosen {
+        background-color: var(--color-white);
+        outline-color: var(--color-#{$color});
+
+        &::after {
+            color: var(--color-#{$color});
+        }
+    }
+}
+
+.select-active {
+    @include type("clear");
+}
+
+.select-selected {
+    @include type("primary");
+
+    .select-text {
+        color: var(--color-primary);
+    }
+}
+
+.select-error {
+    @include type("danger");
+}
+
+.select-disabled {
+    @include type("clear-lighter-200");
+
+    .select-chosen {
+        background-color: var(--color-clear-lighter-500);
+    }
+
+    .select-text {
+        color: var(--color-clear-lighter-200);
+    }
+}
